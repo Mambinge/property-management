@@ -1,0 +1,43 @@
+<div class="container mt-4">
+  <h3 class=" mb-4">Enquiries List</h3>
+  <table class="table table-hover table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>Message</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let enquiry of enquiries">
+        <td>{{ enquiry.firstName }}</td>
+        <td>{{ enquiry.lastName }}</td>
+        <td>{{ enquiry.email }}</td>
+        <td>{{ enquiry.message }}</td>
+        <td>
+          <button
+            type="button"
+            class="btn btn-outline-success"
+            (click)="view(enquiry.id)"
+          >
+            View
+          </button> &nbsp;
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            (click)="delete(enquiry.id)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- <pagination-controls 
+    (pageChange)="page = $event; fetchEnquiries()" 
+    [maxSize]="5" 
+    [responsive]="true">
+  </pagination-controls> -->
+</div>

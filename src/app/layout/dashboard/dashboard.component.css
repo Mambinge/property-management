@@ -1,0 +1,25 @@
+.card-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-title {
+    font-size: medium;
+    font-weight: 100;
+}
+
+.card-text {
+    font-size: small;
+}
+.navbar2 {
+    margin-top: 5px;
+}
+
+.icon {
+    font-size: 4rem; 
+    opacity: 0.5;
+  }
+  
+
+
+  
